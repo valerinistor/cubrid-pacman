@@ -1,0 +1,16 @@
+[Unit]
+Description=cubrid service
+After=network.target
+
+[Service]
+Type=forking
+TimeoutSec=120
+User=cubrid
+Group=cubrid
+
+Environment=CUBRID=/opt/cubrid CUBRID_DATABASES=/var/lib/cubrid/databases
+ExecStart=/opt/cubrid/bin/cubrid service start
+ExecStop=/opt/cubrid/bin/cubrid service stop
+
+[Install]
+WantedBy=multi-user.target
