@@ -21,7 +21,7 @@ source=(http://ftp.cubrid.org/CUBRID_Engine/${pkgver}/CUBRID-${pkgver}.${_buildv
 md5sums=('f3de50a2d54c43f58b18129ac2063964'
          'be1ed3402c6ff427468a9567ed35c2b6'
          '226da8427bfc5d2d9ef6a734c9f00e71'
-         '91419e578db350018801930488821854'
+         'ad50c3d79448f2d9b64153136cb2ace1'
          '7a366cc938717249b7cc0114ff98dfa3'
          '1de08824d0136935b1c4d1fadd4912d8')
 

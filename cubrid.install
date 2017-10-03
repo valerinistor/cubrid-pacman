@@ -26,8 +26,10 @@ print_info_note() {
     echo -e "\nAdd your user to cubrid group"
     echo -e "    sudo usermod -a -G cubrid _username_"
     echo -e "\nRun this command for creating cubrid database"
-    echo -e "    sudo -u cubrid bash -c 'source /etc/profile.d/cubrid.sh; cubrid createdb --file-path=/var/lib/cubrid/databases demodb en_US'"
-    echo -e "\nThen start cubrid service and database"
+    echo -e "    sudo -u cubrid bash -c 'source /etc/profile.d/cubrid.sh; cubrid createdb -v -F /var/lib/cubrid/databases demodb en_US'"
+    echo -e "\nThen start cubrid database and service"
     echo -e "    sudo systemctl start cubrid-database@demodb"
-    echo -e "    sudo systemctl start cubrid\n"
+    echo -e "    sudo systemctl start cubrid"
+    echo -e "\nStart cubrid interactive SQL utility"
+    echo -e "    csql demodb@127.0.0.1\n"
 }
