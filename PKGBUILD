@@ -1,4 +1,4 @@
-# Maintainer: Valeri Nistor <nistor.valeri@gmail.com>
+# Maintainer: Valeri Nistor <nistor dot valeri at gmail dot com>
 
 pkgname=cubrid
 pkgver=10.1.0
@@ -21,7 +21,7 @@ source=(http://ftp.cubrid.org/CUBRID_Engine/${pkgver}/CUBRID-${pkgver}.${_buildv
 md5sums=('f3de50a2d54c43f58b18129ac2063964'
          '7f4c8785860bfd9063da18caef2a6e2c'
          '226da8427bfc5d2d9ef6a734c9f00e71'
-         'ad50c3d79448f2d9b64153136cb2ace1'
+         '3ff4312587081bcc4fe3e5519bb74ca1'
          '7a366cc938717249b7cc0114ff98dfa3'
          '1de08824d0136935b1c4d1fadd4912d8')
 
