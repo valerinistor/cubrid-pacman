@@ -39,10 +39,10 @@ print_note() {
     msg_green "Add your user to cubrid group"
     msg_cmd "sudo usermod -a -G cubrid <username>"
     msg_green "Run this command for creating cubrid database"
-    msg_cmd "sudo -u cubrid bash -c 'source /etc/profile.d/cubrid.sh; cubrid createdb -v -F /var/lib/cubrid/databases demodb en_US'"
+    msg_cmd "sudo -u cubrid bash -c 'source /etc/profile.d/cubrid.sh; cubrid createdb -v -F $CUBRID_DATABASES demodb en_US'"
     msg_green "Then start cubrid database and service"
-    msg_cmd "sudo systemctl start cubrid-database@demodb"
     msg_cmd "sudo systemctl start cubrid"
+    msg_cmd "sudo systemctl start cubrid-database@demodb"
     msg_green "Start cubrid interactive SQL utility"
     msg_cmd "csql demodb@127.0.0.1"
 }

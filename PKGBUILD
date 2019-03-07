@@ -1,4 +1,4 @@
-# Maintainer: Valeri Nistor <nistor dot valeri at gmail dot com>
+# Maintainer: Valeri Nistor <nistor.valeri@gmail.com>
 
 pkgname=cubrid
 pkgver=10.1.1
